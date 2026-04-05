@@ -40,7 +40,7 @@ export const Route = createRootRoute({
 			},
 			{
 				property: "og:image",
-				content: "/hero-image.png",
+				content: "/og.png",
 			},
 			{
 				name: "twitter:card",
