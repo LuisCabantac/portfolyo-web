@@ -1,6 +1,18 @@
 import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/")({
+	head: () => ({
+		meta: [
+			{
+				title: "Portfolyo - Show your craft",
+			},
+			{
+				name: "description",
+				content:
+					"Portfolyo is a community-driven platform for developers to share their work, discover inspiration, and connect through projects.",
+			},
+		],
+	}),
 	component: App,
 });
 
