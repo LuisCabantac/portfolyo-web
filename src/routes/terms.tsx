@@ -1,6 +1,18 @@
 import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/terms")({
+	head: () => ({
+		meta: [
+			{
+				title: "Portfolyo - Terms & Conditions",
+			},
+			{
+				name: "description",
+				content:
+					"Read the terms and conditions for using Portfolyo. Understand user responsibilities, content ownership, and our service guidelines for the developer community.",
+			},
+		],
+	}),
 	component: Terms,
 });
 

@@ -1,6 +1,18 @@
 import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/privacy")({
+	head: () => ({
+		meta: [
+			{
+				title: "Portfolyo - Privacy Policy",
+			},
+			{
+				name: "description",
+				content:
+					"Learn how Portfolyo handles your data, from profile management to media permissions. We prioritize your privacy and give you full control over your portfolio visibility.",
+			},
+		],
+	}),
 	component: Privacy,
 });
 
