@@ -35,8 +35,10 @@ export default function Header() {
 					</Link>
 				</div>
 				<a
-					href="#download"
+					href="https://play.google.com/store/apps/details?id=com.luiscabantac.portfolyo"
 					className="rounded-full bg-primary px-5 py-2.5 text-sm text-background font-semibold no-underline transition"
+					target="_blank"
+					rel="noopener"
 				>
 					Download
 				</a>
