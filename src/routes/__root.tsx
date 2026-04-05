@@ -40,7 +40,7 @@ export const Route = createRootRoute({
 			},
 			{
 				property: "og:image",
-				content: "/og.png",
+				content: "https://portfolyo.luiscabantac.com/og.png",
 			},
 			{
 				name: "twitter:card",
