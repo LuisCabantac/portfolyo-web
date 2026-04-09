@@ -24,7 +24,16 @@ export default function Footer() {
 					</Link>
 				</div>
 				<p className="text-muted-foreground m-0 text-sm">
-					&copy; {year} Luis Cabantac. All rights reserved.
+					&copy; {year}{" "}
+					<a
+						href="https://luiscabantac.com"
+						className="hover:underline transition"
+						target="_blank"
+						rel="noopener"
+					>
+						Luis Cabantac
+					</a>
+					. All rights reserved.
 				</p>
 			</div>
 		</footer>
