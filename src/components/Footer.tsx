@@ -6,8 +6,13 @@ export default function Footer() {
 	return (
 		<footer className="bg-muted mt-20 px-4 pb-14 pt-10">
 			<div className="page-wrap flex flex-col items-center justify-between gap-4 text-center sm:flex-row sm:text-left">
-				<Link to="/" className="flex items-center">
-					<img src="/logo192.png" className="h-10 w-10" alt="logo" />
+				<Link to="/" className="flex items-center" draggable={false}>
+					<img
+						src="/logo192.png"
+						className="h-10 w-10 select-none"
+						alt="logo"
+						draggable={false}
+					/>
 					<h2 className="text-foreground m-0 shrink-0 font-heading text-xl font-medium tracking-tight">
 						Portfolyo
 					</h2>
