@@ -32,7 +32,7 @@ export const Route = createRootRoute({
 			},
 			{
 				property: "og:title",
-				content: "Portfolyo",
+				content: "Portfolyo - Show your craft",
 			},
 			{
 				property: "og:description",
@@ -40,11 +40,35 @@ export const Route = createRootRoute({
 			},
 			{
 				property: "og:image",
-				content: "https://portfolyo.luiscabantac.com/og.png",
+				content: "https://portfolyo.luiscabantac.com/og.jpg",
+			},
+			{
+				property: "og:url",
+				content: "https://portfolyo.luiscabantac.com",
+			},
+			{
+				property: "og:site_name",
+				content: "Portfolyo",
+			},
+			{
+				property: "og:locale",
+				content: "en_US",
 			},
 			{
 				name: "twitter:card",
 				content: "summary_large_image",
+			},
+			{
+				property: "twitter:title",
+				content: "Portfolyo - Show your craft",
+			},
+			{
+				property: "twitter:description",
+				content: "The stage for your professional story.",
+			},
+			{
+				property: "twitter:image",
+				content: "https://portfolyo.luiscabantac.com/twitter-og.jpg",
 			},
 			{
 				name: "theme-color",
