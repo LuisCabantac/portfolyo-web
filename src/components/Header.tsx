@@ -1,49 +1,82 @@
 import { Link } from "@tanstack/react-router";
+import { useState } from "react";
 
 export default function Header() {
+	const [isVisible, setIsVisible] = useState(true);
+
 	return (
-		<header className="sticky top-0 z-50 bg-(--header-bg) backdrop-blur-lg">
-			<nav className="page-wrap flex flex-wrap items-center justify-between gap-x-3 gap-y-2 py-3 sm:py-4">
-				<Link to="/" className="flex items-center">
-					<img src="/logo192.png" className="h-10 w-10" alt="logo" />
-					<h2 className="text-foreground m-0 shrink-0 font-heading text-xl font-medium tracking-tight">
-						Portfolyo
-					</h2>
-				</Link>
-
-				<div className="md:flex hidden w-full flex-wrap items-center gap-x-4 gap-y-1 pb-1 font-heading text-base font-medium sm:w-auto sm:flex-nowrap sm:pb-0">
-					<Link
-						to="/"
-						activeProps={{ className: "underline text-primary" }}
-						className="text-muted-foreground hover:text-foreground transition-colors"
-					>
-						Home
-					</Link>
-					<Link
-						to="/privacy"
-						activeProps={{ className: "underline text-primary" }}
-						className="text-muted-foreground hover:text-foreground transition-colors"
-					>
-						Privacy Policy
-					</Link>
-					<Link
-						to="/terms"
-						activeProps={{ className: "underline text-primary" }}
-						className="text-muted-foreground hover:text-foreground transition-colors"
-					>
-						Terms and Conditions
-					</Link>
+		<header className="sticky top-0 z-50">
+			{isVisible && (
+				<div className="block md:hidden bg-sidebar-accent">
+					<nav className="page-wrap flex flex-wrap items-center justify-between gap-x-3 gap-y-2 py-3 sm:py-4">
+						<div className="flex gap-2 items-center">
+							<button type="button" onClick={() => setIsVisible(false)}>
+								<img
+									src="/icons/close-icon.svg"
+									className="h-6 invert dark:invert-0"
+									alt="logo"
+								/>
+							</button>
+							<Link to="/" className="flex items-center">
+								<img src="/logo192.png" className="h-10 w-10" alt="logo" />
+								<h2 className="text-sidebar-accent-foreground m-0 shrink-0 font-heading text-xl font-medium tracking-tight">
+									Portfolyo
+								</h2>
+							</Link>
+						</div>
+						<a
+							href="https://play.google.com/store/apps/details?id=com.luiscabantac.portfolyo"
+							className="rounded-full bg-sidebar-primary-foreground px-5 py-2.5 text-sm text-primary font-semibold no-underline transition"
+							target="_blank"
+							rel="noopener"
+						>
+							Get App
+						</a>
+					</nav>
 				</div>
-				<a
-					href="https://play.google.com/store/apps/details?id=com.luiscabantac.portfolyo"
-					className="rounded-full bg-primary px-5 py-2.5 text-sm text-background font-semibold no-underline transition"
-					target="_blank"
-					rel="noopener"
-				>
-					Download
-				</a>
+			)}
+			<div className="backdrop-blur-lg">
+				<nav className="page-wrap flex flex-wrap items-center justify-between gap-x-3 gap-y-2 py-3 sm:py-4">
+					<Link to="/" className="flex items-center">
+						<img src="/logo192.png" className="h-10 w-10" alt="logo" />
+						<h2 className="text-foreground m-0 shrink-0 font-heading text-xl font-medium tracking-tight">
+							Portfolyo
+						</h2>
+					</Link>
 
-				{/* <div className="ml-auto flex items-center gap-1.5 sm:ml-0 sm:gap-2">
+					<div className="md:flex hidden w-full flex-wrap items-center gap-x-4 gap-y-1 pb-1 font-heading text-base font-medium sm:w-auto sm:flex-nowrap sm:pb-0">
+						<Link
+							to="/"
+							activeProps={{ className: "underline text-primary" }}
+							className="text-muted-foreground hover:text-foreground transition-colors"
+						>
+							Home
+						</Link>
+						<Link
+							to="/privacy"
+							activeProps={{ className: "underline text-primary" }}
+							className="text-muted-foreground hover:text-foreground transition-colors"
+						>
+							Privacy Policy
+						</Link>
+						<Link
+							to="/terms"
+							activeProps={{ className: "underline text-primary" }}
+							className="text-muted-foreground hover:text-foreground transition-colors"
+						>
+							Terms and Conditions
+						</Link>
+					</div>
+					<a
+						href="https://play.google.com/store/apps/details?id=com.luiscabantac.portfolyo"
+						className="md:block hidden rounded-full bg-primary px-5 py-2.5 text-sm text-background font-semibold no-underline transition"
+						target="_blank"
+						rel="noopener"
+					>
+						Get App
+					</a>
+
+					{/* <div className="ml-auto flex items-center gap-1.5 sm:ml-0 sm:gap-2">
 					<a
 						href="https://x.com/tan_stack"
 						target="_blank"
@@ -73,7 +106,8 @@ export default function Header() {
 						</svg>
 					</a>
 				</div> */}
-			</nav>
+				</nav>
+			</div>
 		</header>
 	);
 }
