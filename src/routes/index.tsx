@@ -34,11 +34,14 @@ function App() {
 
 						<a
 							href="https://play.google.com/store/apps/details?id=com.luiscabantac.portfolyo"
-							className="bg-primary text-background rounded-full px-5 py-2.5 text-sm font-semibold no-underline transition"
 							target="_blank"
 							rel="noopener"
 						>
-							Get the App
+							<img
+								src="/google-play-badge.png"
+								className="h-10"
+								alt="google play store badge"
+							/>
 						</a>
 					</div>
 
