@@ -13,12 +13,18 @@ export default function Header() {
 							<button type="button" onClick={() => setIsVisible(false)}>
 								<img
 									src="/icons/close-icon.svg"
-									className="h-6 invert dark:invert-0"
+									className="h-6 invert dark:invert-0 select-none"
 									alt="logo"
+									draggable={false}
 								/>
 							</button>
 							<Link to="/" className="flex items-center">
-								<img src="/logo192.png" className="h-10 w-10" alt="logo" />
+								<img
+									src="/logo192.png"
+									className="h-10 w-10 select-none"
+									alt="logo"
+									draggable={false}
+								/>
 								<h2 className="text-sidebar-accent-foreground m-0 shrink-0 font-heading text-xl font-medium tracking-tight">
 									Portfolyo
 								</h2>
@@ -37,8 +43,13 @@ export default function Header() {
 			)}
 			<div className="backdrop-blur-lg">
 				<nav className="page-wrap flex flex-wrap items-center justify-between gap-x-3 gap-y-2 py-3 sm:py-4">
-					<Link to="/" className="flex items-center">
-						<img src="/logo192.png" className="h-10 w-10" alt="logo" />
+					<Link to="/" className="flex items-center" draggable={false}>
+						<img
+							src="/logo192.png"
+							className="h-10 w-10 select-none"
+							alt="logo"
+							draggable={false}
+						/>
 						<h2 className="text-foreground m-0 shrink-0 font-heading text-xl font-medium tracking-tight">
 							Portfolyo
 						</h2>

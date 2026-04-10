@@ -39,13 +39,19 @@ function App() {
 						>
 							<img
 								src="/google-play-badge.png"
-								className="h-10"
+								className="h-10 select-none"
 								alt="google play store badge"
+								draggable={false}
 							/>
 						</a>
 					</div>
 
-					<img src="/hero-image.png" alt="hero" className="md:h-96 h-128" />
+					<img
+						src="/hero-image.png"
+						alt="hero"
+						className="md:h-96 h-128 select-none"
+						draggable={false}
+					/>
 				</div>
 			</section>
 
