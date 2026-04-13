@@ -18,7 +18,7 @@ export const Route = createFileRoute("/")({
 
 function App() {
 	return (
-		<main className="page-wrap px-4 pb-8 pt-14">
+		<main className="page-wrap px-4 min-h-[90dvh] flex items-center justify-center">
 			<section className="relative overflow-hidden rounded-[2rem] md:px-6 md:py-28 py-10">
 				<div className="flex md:flex-row flex-col items-center justify-between md:gap-0 gap-12">
 					<div>
@@ -55,7 +55,7 @@ function App() {
 				</div>
 			</section>
 
-			<section className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+			{/* <section className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
 				{[
 					[
 						"Unified Presence",
@@ -85,7 +85,7 @@ function App() {
 						<p className="text-muted-foreground m-0 text-sm">{desc}</p>
 					</article>
 				))}
-			</section>
+			</section> */}
 		</main>
 	);
 }
