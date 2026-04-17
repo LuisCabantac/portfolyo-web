@@ -133,8 +133,7 @@ function Privacy() {
 					Privacy Policy
 				</h1>
 				<p className="m-0 text-base leading-8 text-muted-foreground">
-					At Portfolyo, we take your privacy seriously. This policy explains
-					what information we collect and how we use it.
+					This policy explains what information we collect and how we use it.
 				</p>
 			</section>
 
