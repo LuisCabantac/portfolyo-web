@@ -23,7 +23,7 @@ export const Route = createRootRoute({
 				content: "width=device-width, initial-scale=1",
 			},
 			{
-				title: "Portfolyo - Show your craft",
+				title: "Portfolyo - Developer Portfolios",
 			},
 			{
 				name: "description",
@@ -32,7 +32,7 @@ export const Route = createRootRoute({
 			},
 			{
 				property: "og:title",
-				content: "Portfolyo - Show your craft",
+				content: "Portfolyo - Developer Portfolios",
 			},
 			{
 				property: "og:description",
@@ -60,7 +60,7 @@ export const Route = createRootRoute({
 			},
 			{
 				property: "twitter:title",
-				content: "Portfolyo - Show your craft",
+				content: "Portfolyo - Developer Portfolios",
 			},
 			{
 				property: "twitter:description",
