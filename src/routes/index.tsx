@@ -9,7 +9,7 @@ export const Route = createFileRoute("/")({
 			{
 				name: "description",
 				content:
-					"Discover real developer portfolios, get inspired by top projects, and save ideas for your own.",
+					"Discover developer portfolios, get inspired, and save ideas for your own.",
 			},
 		],
 	}),
@@ -26,7 +26,7 @@ function App() {
 							Discover the best developer portfolios.
 						</h1>
 						<p className="text-muted-foreground font-heading mb-8 max-w-2xl text-base sm:text-lg">
-							Find real portfolios from developers worldwide, get inspired by
+							Find developer portfolios from around the world, get inspired by
 							their work, and save ideas for your own.
 						</p>
 
