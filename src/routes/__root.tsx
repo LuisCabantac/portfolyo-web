@@ -28,7 +28,7 @@ export const Route = createRootRoute({
 			{
 				name: "description",
 				content:
-					"Portfolyo is a community-driven platform for developers to share their work, discover inspiration, and connect through projects.",
+					"Discover developer portfolios and portfolio inspiration from developers worldwide. Save and explore ideas for your own portfolio.",
 			},
 			{
 				property: "og:title",
@@ -36,7 +36,8 @@ export const Route = createRootRoute({
 			},
 			{
 				property: "og:description",
-				content: "The stage for your professional story.",
+				content:
+					"Discover developer portfolios, get inspired, and save ideas for your own.",
 			},
 			{
 				property: "og:image",
@@ -64,7 +65,8 @@ export const Route = createRootRoute({
 			},
 			{
 				property: "twitter:description",
-				content: "The stage for your professional story.",
+				content:
+					"Discover developer portfolios, get inspired, and save ideas for your own.",
 			},
 			{
 				property: "twitter:image",
