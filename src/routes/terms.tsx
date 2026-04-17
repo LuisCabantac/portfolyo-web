@@ -101,8 +101,8 @@ function Terms() {
 					Terms & Conditions
 				</h1>
 				<p className="m-0 max-w-3xl text-base leading-8 text-muted-foreground">
-					Welcome to Portfolyo. By using our service, you agree to these terms.
-					Please read them carefully.
+					By using our service, you agree to these terms. Please read them
+					carefully.
 				</p>
 			</section>
 

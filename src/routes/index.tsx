@@ -4,12 +4,12 @@ export const Route = createFileRoute("/")({
 	head: () => ({
 		meta: [
 			{
-				title: "Portfolyo - Show your craft",
+				title: "Portfolyo - Developer Portfolios",
 			},
 			{
 				name: "description",
 				content:
-					"Portfolyo is a community-driven platform for developers to share their work, discover inspiration, and connect through projects.",
+					"Discover real developer portfolios, get inspired by top projects, and save ideas for your own.",
 			},
 		],
 	}),
@@ -23,13 +23,11 @@ function App() {
 				<div className="flex md:flex-row flex-col items-center justify-between md:gap-0 gap-12">
 					<div>
 						<h1 className="text-foreground mb-5 max-w-3xl text-4xl font-bold leading-[1.02] tracking-tight sm:text-6xl">
-							The stage for your professional story.
+							Discover the best developer portfolios.
 						</h1>
 						<p className="text-muted-foreground font-heading mb-8 max-w-2xl text-base sm:text-lg">
-							Stop overthinking your "About Me" page. Portfolyo is a
-							community-driven platform for developers to share their work,
-							discover top-tier inspiration, and connect through the projects
-							they build.
+							Find real portfolios from developers worldwide, get inspired by
+							their work, and save ideas for your own.
 						</p>
 
 						<a
