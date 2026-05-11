@@ -95,6 +95,29 @@ function Privacy() {
     },
     {
       id: 4,
+      title: "On-Device AI Chat",
+      description:
+        "The portfolio advisor chat runs entirely on your device with no data collection.",
+      items: [
+        {
+          label: "Processing",
+          content:
+            "Chat conversations are processed locally on your device using on-device AI. No messages are sent to external servers.",
+        },
+        {
+          label: "Data Retention",
+          content:
+            "Conversations are not stored anywhere. They disappear when you close the app and are never backed up.",
+        },
+        {
+          label: "No Tracking",
+          content:
+            "We do not collect, analyze, or retain your chat messages. Your conversations are completely private.",
+        },
+      ],
+    },
+    {
+      id: 5,
       title: "Data Visibility & Control",
       description: "You have full control over your data and its visibility.",
       items: [
@@ -111,7 +134,7 @@ function Privacy() {
       ],
     },
     {
-      id: 5,
+      id: 6,
       title: "Media Permissions",
       description:
         "The app requests specific permissions to function correctly.",
@@ -128,7 +151,7 @@ function Privacy() {
   return (
     <main className="page-wrap px-4 min-h-[90dvh] flex flex-col items-start justify-center">
       <section className="island-shell mb-8 rounded-2xl md:px-6 py-6 sm:p-8">
-        <p className="island-kicker mb-2">Last updated: April 5, 2026</p>
+        <p className="island-kicker mb-2">Last updated: May 12, 2026</p>
         <h1 className="display-title mb-3 text-4xl font-bold text-foreground sm:text-5xl">
           Privacy Policy
         </h1>
