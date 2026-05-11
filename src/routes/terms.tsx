@@ -60,6 +60,28 @@ function Terms() {
     },
     {
       id: 3,
+      title: "AI Chat Feature",
+      description: "Guidelines for using the on-device portfolio advisor.",
+      items: [
+        {
+          label: "Purpose",
+          content:
+            "The AI chat provides feedback on portfolios, project selection, and presentation — nothing else.",
+        },
+        {
+          label: "Limitations",
+          content:
+            "As a local AI model, it may have knowledge limitations and occasionally provide inaccurate suggestions. Always verify important advice independently.",
+        },
+        {
+          label: "Scope",
+          content:
+            "The chat is restricted to portfolio-related topics. Questions outside this scope will be politely declined.",
+        },
+      ],
+    },
+    {
+      id: 4,
       title: "Data and Deletion",
       description: "How your data is managed over time.",
       items: [
@@ -75,7 +97,7 @@ function Terms() {
       ],
     },
     {
-      id: 4,
+      id: 5,
       title: "Legal Disclaimers",
       description: "Standard legal protections for the service.",
       items: [
@@ -96,7 +118,7 @@ function Terms() {
   return (
     <main className="page-wrap px-4 min-h-[90dvh] flex flex-col items-start justify-center">
       <section className="island-shell mb-8 rounded-2xl md:px-6 py-6 sm:p-8">
-        <p className="island-kicker mb-2">Last updated: April 5, 2026</p>
+        <p className="island-kicker mb-2">Last updated: May 12, 2026</p>
         <h1 className="display-title mb-3 text-4xl font-bold text-foreground sm:text-5xl">
           Terms & Conditions
         </h1>
