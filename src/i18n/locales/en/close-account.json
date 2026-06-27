@@ -1,0 +1,23 @@
+{
+  "header": "Closing your account",
+  "subtext": "We're sorry to see you go. Closing your account is a permanent action and cannot be undone. Please ensure you have backed up any information you wish to keep.",
+  "subtitle": "Account Management",
+  "next_steps": {
+    "heading": "What happens next?",
+    "items": [
+      {
+        "label": "Data Removal",
+        "content": "Your profile, portfolio data, and uploaded screenshots will be permanently deleted from our active databases."
+      },
+      {
+        "label": "Profile Visibility",
+        "content": "Your public portfolio URL will no longer be accessible."
+      },
+      {
+        "label": "Third-Party Auth",
+        "content": "Your connection to Google or GitHub will be severed within our platform."
+      }
+    ]
+  },
+  "footer": "To proceed with account deletion, please use the settings menu within the Portfolyo mobile app."
+}
