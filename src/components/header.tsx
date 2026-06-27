@@ -23,7 +23,13 @@ const HeaderLinks = ({ title, href }: { title: string; href: string }) => {
   );
 };
 
-const Header = () => {
+const Header = ({
+  showLinks = false,
+  showCTA = false,
+}: {
+  showLinks?: boolean;
+  showCTA?: boolean;
+}) => {
   const { t } = useT("common");
   const [isVisible, setIsVisible] = useState(true);
 
@@ -87,25 +93,29 @@ const Header = () => {
             </h2>
           </Link>
 
-          <div className="hidden w-full flex-wrap items-center gap-x-4 gap-y-1 pb-1 font-heading text-base font-medium sm:w-auto sm:flex-nowrap sm:pb-0 md:flex">
-            {headerLinks.map((link) => (
-              <HeaderLinks
-                key={link.href}
-                title={link.title}
-                href={link.href}
-              />
-            ))}
-          </div>
+          {showLinks && (
+            <div className="hidden w-full flex-wrap items-center gap-x-4 gap-y-1 pb-1 font-heading text-base font-medium sm:w-auto sm:flex-nowrap sm:pb-0 md:flex">
+              {headerLinks.map((link) => (
+                <HeaderLinks
+                  key={link.href}
+                  title={link.title}
+                  href={link.href}
+                />
+              ))}
+            </div>
+          )}
 
-          <Button asChild className="hidden md:flex">
-            <a
-              href="https://play.google.com/store/apps/details?id=com.luiscabantac.portfolyo"
-              target="_blank"
-              rel="noopener"
-            >
-              {t("cta.download")}
-            </a>
-          </Button>
+          {showCTA && (
+            <Button asChild className="hidden md:flex">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.luiscabantac.portfolyo"
+                target="_blank"
+                rel="noopener"
+              >
+                {t("cta.download")}
+              </a>
+            </Button>
+          )}
         </nav>
       </div>
     </header>
