@@ -1,3 +1,6 @@
+import { redirect } from "next/navigation";
+import { auth } from "@clerk/nextjs/server";
+
 import Header from "@/components/header";
 
 const RootLayout = async ({
@@ -5,6 +8,12 @@ const RootLayout = async ({
 }: Readonly<{
   children: React.ReactNode;
 }>) => {
+  const { userId } = await auth();
+
+  if (userId) {
+    return redirect("/");
+  }
+
   return (
     <>
       <Header />
