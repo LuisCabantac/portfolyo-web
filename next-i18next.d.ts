@@ -7,6 +7,7 @@ import privacy from "./src/i18n/locales/en/privacy.json";
 import terms from "./src/i18n/locales/en/terms.json";
 import notFound from "./src/i18n/locales/en/not-found.json";
 import closeAccount from "./src/i18n/locales/en/close-account.json";
+import signIn from "./src/i18n/locales/en/sign-in.json";
 
 declare module "i18next" {
   interface CustomTypeOptions {
@@ -19,6 +20,7 @@ declare module "i18next" {
       terms: typeof terms;
       notFound: typeof notFound;
       closeAccount: typeof closeAccount;
+      signIn: typeof signIn;
     };
   }
 }

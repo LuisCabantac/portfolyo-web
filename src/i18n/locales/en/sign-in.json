@@ -1,0 +1,10 @@
+{
+  "header": "Sign in",
+  "description": "Sign in or create an account to showcase your work and connect with others.",
+  "link": "Learn how your data is protected",
+  "buttons": {
+    "google": "Continue with Google",
+    "github": "Continue with GitHub",
+    "guest": "Continue as a guest"
+  }
+}
