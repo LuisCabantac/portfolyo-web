@@ -1,0 +1,16 @@
+{
+  "app_name": "Portfolyo",
+  "nav": {
+    "home": "Home",
+    "privacy": "Privacy Policy",
+    "terms": "Terms and Conditions"
+  },
+  "cta": {
+    "get": "Get App",
+    "download": "Download App"
+  },
+  "footer": {
+    "developer": "Luis Cabantac",
+    "rights": "All rights reserved."
+  }
+}
