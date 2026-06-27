@@ -1,0 +1,85 @@
+{
+  "header": "Terms & Conditions",
+  "subtext": "By using our service, you agree to these terms. Please read them carefully.",
+  "last_updated": "Last updated: {{date}}",
+  "terms_and_conditions": [
+    {
+      "title": "Service for Users",
+      "description": "General guidelines for using the Portfolyo community platform.",
+      "items": [
+        {
+          "label": "Purpose",
+          "content": "A community for users to showcase professional work and find inspiration."
+        },
+        {
+          "label": "Availability",
+          "content": "The service is provided 'as is' and requires an active internet connection."
+        }
+      ]
+    },
+    {
+      "title": "User Responsibilities",
+      "description": "Your commitments as a member of the community.",
+      "items": [
+        {
+          "label": "Content Ownership",
+          "content": "You retain full ownership of the portfolios and descriptions you share."
+        },
+        {
+          "label": "Conduct",
+          "content": "Users agree not to upload illegal, offensive, or impersonating content."
+        },
+        {
+          "label": "Security",
+          "content": "You are responsible for the security of your own login credentials."
+        }
+      ]
+    },
+    {
+      "title": "AI Chat Feature",
+      "description": "Guidelines for using the on-device portfolio advisor.",
+      "items": [
+        {
+          "label": "Purpose",
+          "content": "The AI chat provides feedback on portfolios, project selection, and presentation — nothing else."
+        },
+        {
+          "label": "Limitations",
+          "content": "As a local AI model, it may have knowledge limitations and occasionally provide inaccurate suggestions. Always verify important advice independently."
+        },
+        {
+          "label": "Scope",
+          "content": "The chat is restricted to portfolio-related topics. Questions outside this scope will be politely declined."
+        }
+      ]
+    },
+    {
+      "title": "Data and Deletion",
+      "description": "How your data is managed over time.",
+      "items": [
+        {
+          "label": "Persistence",
+          "content": "We do not guarantee permanent storage; please maintain your own backups."
+        },
+        {
+          "label": "Finality",
+          "content": "Account deletion is permanent and cannot be reversed."
+        }
+      ]
+    },
+    {
+      "title": "Legal Disclaimers",
+      "description": "Standard legal protections for the service.",
+      "items": [
+        {
+          "label": "Liability",
+          "content": "The developer is not responsible for loss of data or professional opportunities."
+        },
+        {
+          "label": "Updates",
+          "content": "Continued use of the app constitutes acceptance of any updated terms."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "header": "Privacy Policy",
+  "subtext": "This policy explains what information we collect and how we use it.",
+  "last_updated": "Last updated: {{date}}",
+  "policies": [
+    {
+      "title": "Information We Collect",
+      "description": "We only collect information that is necessary to provide the core services of Portfolyo.",
+      "items": [
+        {
+          "label": "Account Information",
+          "content": "When you sign up via your Google or GitHub account, we receive your name, email address, and profile picture."
+        },
+        {
+          "label": "Portfolio Data",
+          "content": "We store the information you provide about your work, including portfolio URLs, descriptions, technology stacks, and screenshots."
+        },
+        {
+          "label": "Usage Information",
+          "content": "We track 'views' on portfolios to help you see engagement with your work."
+        },
+        {
+          "label": "Device Data",
+          "content": "We may collect your Expo Push Token if you enable notifications, and basic device information provided by the Expo framework."
+        }
+      ]
+    },
+    {
+      "title": "How We Use Your Information",
+      "description": "Your data is used solely to provide and improve the Portfolyo experience.",
+      "items": [
+        {
+          "label": "Profile Management",
+          "content": "To create and maintain your professional profile."
+        },
+        {
+          "label": "Community Discovery",
+          "content": "To display your portfolio to other users in the 'Explore' section if you enable visibility."
+        },
+        {
+          "label": "Engagement",
+          "content": "To allow users to bookmark portfolios they find inspiring."
+        },
+        {
+          "label": "Maintenance",
+          "content": "To improve the app experience and troubleshoot technical issues."
+        }
+      ]
+    },
+    {
+      "title": "Third-Party Services",
+      "description": "We use reliable third-party providers to power the app's infrastructure.",
+      "items": [
+        {
+          "label": "Authentication",
+          "content": "Secure sign-in via trusted OAuth providers."
+        },
+        {
+          "label": "Storage",
+          "content": "Cloud database management and secure file storage for screenshots."
+        },
+        {
+          "label": "Performance",
+          "content": "Integrated tools for app delivery and background updates."
+        }
+      ]
+    },
+    {
+      "title": "On-Device AI Chat",
+      "description": "The portfolio advisor chat runs entirely on your device with no data collection.",
+      "items": [
+        {
+          "label": "Processing",
+          "content": "Chat conversations are processed locally on your device using on-device AI. No messages are sent to external servers."
+        },
+        {
+          "label": "Data Retention",
+          "content": "Conversations are not stored anywhere. They disappear when you close the app and are never backed up."
+        },
+        {
+          "label": "No Tracking",
+          "content": "We do not collect, analyze, or retain your chat messages. Your conversations are completely private."
+        }
+      ]
+    },
+    {
+      "title": "Data Visibility & Control",
+      "description": "You have full control over your data and its visibility.",
+      "items": [
+        {
+          "label": "Visibility Toggle",
+          "content": "By default, your portfolio is only discoverable if you opt-in via settings."
+        },
+        {
+          "label": "Account Deletion",
+          "content": "Closing your account permanently deletes your profile and portfolio data from our active databases."
+        }
+      ]
+    },
+    {
+      "title": "Media Permissions",
+      "description": "The app requests specific permissions to function correctly.",
+      "items": [
+        {
+          "label": "Library Access",
+          "content": "Used only to allow you to upload images of your work. We do not access other photos."
+        }
+      ]
+    }
+  ]
+}
