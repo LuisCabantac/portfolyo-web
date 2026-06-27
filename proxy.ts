@@ -1,11 +1,18 @@
 import { createProxy } from "next-i18next/proxy";
+import { clerkMiddleware } from "@clerk/nextjs/server";
 
 import i18nConfig from "./i18n.config";
 
-export const proxy = createProxy(i18nConfig);
+const i18nMiddleware = createProxy(i18nConfig);
+
+export default clerkMiddleware((auth, req) => {
+  return i18nMiddleware(req);
+});
 
 export const config = {
   matcher: [
-    "/((?!api|_next/static|_next/image|assets|favicon.ico|sw.js|site.webmanifest).*)",
+    "/((?!_next|[^?]*\\.(?:html?|css|js(?!on)|jpe?g|webp|png|gif|svg|ttf|woff2?|ico|csv|docx?|xlsx?|zip|webmanifest)).*)",
+    "/(api|trpc)(.*)",
+    "/__clerk/(.*)",
   ],
 };
