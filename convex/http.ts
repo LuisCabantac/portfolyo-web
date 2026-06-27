@@ -16,6 +16,16 @@ http.route({
       return new Response("Error occured", { status: 400 });
     }
     switch (event.type) {
+      case "user.created": {
+        const { id, first_name, last_name, email_addresses, image_url } = event.data;
+        await ctx.runMutation(internal.mutations.users.createUserInternal, {
+          clerkId: id!,
+          name: [first_name, last_name].filter(Boolean).join(" ") || "Unknown",
+          email: email_addresses?.[0]?.email_address ?? "",
+          profilePicture: image_url ?? "",
+        });
+        break;
+      }
       case "user.deleted": {
         const clerkId = event.data.id!;
         await ctx.runMutation(internal.mutations.users.deleteUser, { clerkId });

@@ -218,3 +218,38 @@ export const deleteUser = internalMutation({
     await ctx.db.delete("users", user._id);
   },
 });
+
+export const createUserInternal = internalMutation({
+  args: {
+    name: v.string(),
+    email: v.string(),
+    profilePicture: v.string(),
+    clerkId: v.string(),
+  },
+  handler: async (ctx, { name, email, profilePicture, clerkId }) => {
+    const existingUser = await ctx.db
+      .query("users")
+      .withIndex("by_clerkId", (q) => q.eq("clerkId", clerkId))
+      .first();
+
+    if (existingUser) {
+      return null;
+    }
+
+    await ctx.db.insert("users", {
+      name,
+      email,
+      profilePicture,
+      clerkId,
+      portfolio: null,
+      showPortfolio: false,
+      professionalTitle: null,
+      expoPushToken: null,
+      githubUrl: null,
+      linkedinUrl: null,
+      facebookUrl: null,
+      twitterUrl: null,
+      updatedTime: Date.now(),
+    });
+  },
+});
