@@ -7,11 +7,11 @@ const RootLayout = async ({
   children: React.ReactNode;
 }>) => {
   return (
-    <div>
-      <Header />
+    <>
+      <Header showLinks showCTA />
       {children}
       <Footer />
-    </div>
+    </>
   );
 };
 
