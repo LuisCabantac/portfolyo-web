@@ -6,7 +6,7 @@ import { getResources, getT, initServerI18next } from "next-i18next/server";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import i18nConfig from "../../i18n.config";
-import { ThemeProvider } from "@/components/theme-provider";
+import Providers from "@/components/providers";
 
 initServerI18next(i18nConfig);
 
@@ -30,18 +30,13 @@ const RootLayout = async ({
   return (
     <html lang="en" className="h-full antialiased" suppressHydrationWarning>
       <body className="wrap-anywhere antialiased">
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
+        <Providers>
           <I18nProvider language={lng} resources={resources}>
             <Header />
             {children}
             <Footer />
           </I18nProvider>
-        </ThemeProvider>
+        </Providers>
       </body>
     </html>
   );
