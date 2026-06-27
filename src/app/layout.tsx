@@ -3,8 +3,6 @@ import type { Metadata } from "next";
 import { I18nProvider } from "next-i18next/client";
 import { getResources, getT, initServerI18next } from "next-i18next/server";
 
-import Header from "@/components/header";
-import Footer from "@/components/footer";
 import i18nConfig from "../../i18n.config";
 import Providers from "@/components/providers";
 
@@ -32,9 +30,7 @@ const RootLayout = async ({
       <body className="wrap-anywhere antialiased">
         <Providers>
           <I18nProvider language={lng} resources={resources}>
-            <Header />
             {children}
-            <Footer />
           </I18nProvider>
         </Providers>
       </body>
