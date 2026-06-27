@@ -6,6 +6,7 @@ import license from "./src/i18n/locales/en/license.json";
 import privacy from "./src/i18n/locales/en/privacy.json";
 import terms from "./src/i18n/locales/en/terms.json";
 import notFound from "./src/i18n/locales/en/not-found.json";
+import closeAccount from "./src/i18n/locales/en/close-account.json";
 
 declare module "i18next" {
   interface CustomTypeOptions {
@@ -17,6 +18,7 @@ declare module "i18next" {
       privacy: typeof privacy;
       terms: typeof terms;
       notFound: typeof notFound;
+      closeAccount: typeof closeAccount;
     };
   }
 }
