@@ -1,7 +1,7 @@
 import { createProxy } from "next-i18next/proxy";
 import { clerkMiddleware } from "@clerk/nextjs/server";
 
-import i18nConfig from "./i18n.config";
+import i18nConfig from "../i18n.config";
 
 const i18nMiddleware = createProxy(i18nConfig);
 
