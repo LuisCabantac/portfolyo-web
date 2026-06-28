@@ -7,12 +7,13 @@ import { useT } from "next-i18next/client";
 import { useRouter } from "next/navigation";
 import { UserResource } from "@clerk/react/types";
 
-import { Portfolio } from "@/lib/icons";
+import { ChatAI, Portfolio } from "@/lib/icons";
 import { Id } from "../../../../convex/_generated/dataModel";
 import { useGetAllPortfolios } from "@/lib/services/portfolios/queries";
 import { useBookmarkPortfolio } from "@/lib/services/bookmarks/mutations";
 import { useGetProfileByEmailAddress } from "@/lib/services/users/queries";
 
+import { Button } from "@/components/ui/button";
 import PortfolioCard from "@/components/portfolio-card";
 import PortfolioCardSkeleton from "@/components/portfolio-card-skeleton";
 
@@ -128,6 +129,30 @@ const Explore = () => {
           </p>
         </div>
       )}
+      <Button
+        variant="secondary"
+        size="icon-xl"
+        className="fixed right-5 bottom-5 rounded-xl md:right-6 md:bottom-6"
+        asChild
+      >
+        <a
+          href="https://play.google.com/store/apps/details?id=com.luiscabantac.portfolyo"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div
+            className="size-6 bg-current"
+            style={{
+              maskImage: `url(${ChatAI.src})`,
+              WebkitMaskImage: `url(${ChatAI.src})`,
+              maskSize: "contain",
+              WebkitMaskSize: "contain",
+              maskRepeat: "no-repeat",
+              WebkitMaskRepeat: "no-repeat",
+            }}
+          />
+        </a>
+      </Button>
     </main>
   );
 };
