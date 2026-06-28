@@ -79,7 +79,7 @@ const Explore = () => {
   };
 
   return (
-    <main className="mx-auto p-4 md:max-w-6xl">
+    <main className="mx-auto p-4 md:max-w-5xl">
       <ProfessionalTitlesFilter
         selectedTitleId={selectedTitleId}
         onSelectTitle={setSelectedTitleId}

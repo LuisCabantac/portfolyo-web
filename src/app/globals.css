@@ -10,8 +10,10 @@
 
 @theme {
   --font-sans: "Google Sans Variable", ui-sans-serif, system-ui, sans-serif;
-  --font-heading: "Google Sans Flex Variable", ui-sans-serif, system-ui, sans-serif;
-  --font-mono: "Google Sans Code Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-heading:
+    "Google Sans Flex Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-mono:
+    "Google Sans Code Variable", ui-sans-serif, system-ui, sans-serif;
 }
 
 @theme inline {
@@ -83,7 +85,7 @@ body {
 :root {
   --background: #fff8f2;
   --foreground: #393125;
-  --card: #fff8f2;
+  --card: #fff7f4;
   --card-foreground: #393125;
   --popover: #fff8f2;
   --popover-foreground: #393125;
