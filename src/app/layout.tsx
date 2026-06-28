@@ -4,7 +4,7 @@ import { I18nProvider } from "next-i18next/client";
 import { getResources, getT, initServerI18next } from "next-i18next/server";
 
 import i18nConfig from "../../i18n.config";
-import Providers from "@/components/providers";
+import Providers from "@/providers";
 
 initServerI18next(i18nConfig);
 
