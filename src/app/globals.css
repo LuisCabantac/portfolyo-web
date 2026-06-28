@@ -10,15 +10,10 @@
 
 @theme {
   --font-sans: "Google Sans Variable", ui-sans-serif, system-ui, sans-serif;
-<<<<<<< HEAD
   --font-heading:
     "Google Sans Flex Variable", ui-sans-serif, system-ui, sans-serif;
   --font-mono:
     "Google Sans Code Variable", ui-sans-serif, system-ui, sans-serif;
-=======
-  --font-heading: "Google Sans Flex Variable", ui-sans-serif, system-ui, sans-serif;
-  --font-mono: "Google Sans Code Variable", ui-sans-serif, system-ui, sans-serif;
->>>>>>> 8af0cca92df6ff9a70466eba9bb27143f85cd4fd
 }
 
 @theme inline {
