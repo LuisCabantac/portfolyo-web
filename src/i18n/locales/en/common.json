@@ -13,5 +13,15 @@
     "developer": "Luis Cabantac",
     "rights": "All rights reserved."
   },
-  "log_out": "Log out"
+  "log_out": "Log out",
+  "all": "All",
+  "professional_titles": {
+    "frontEnd": "Front End Developer",
+    "backEnd": "Back End Developer",
+    "fullStack": "Full Stack Developer",
+    "mobile": "Mobile Developer",
+    "softEng": "Software Engineer",
+    "web": "Web Developer",
+    "agency": "Agency"
+  }
 }

@@ -12,6 +12,7 @@ import { useGetProfileByEmailAddress } from "@/lib/services/users/queries";
 
 import PortfolioCard from "@/components/portfolio-card";
 import PortfolioCardSkeleton from "@/components/portfolio-card-skeleton";
+import ProfessionalTitlesFilter from "@/components/professional-titles-filter";
 
 const Explore = () => {
   const router = useRouter();
@@ -70,6 +71,10 @@ const Explore = () => {
 
   return (
     <main className="mx-auto p-4 md:max-w-6xl">
+      <ProfessionalTitlesFilter
+        selectedTitleId={selectedTitleId}
+        onSelectTitle={setSelectedTitleId}
+      />
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
         {isLoading
           ? Array.from({ length: 6 }).map((_, i) => (
