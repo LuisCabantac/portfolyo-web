@@ -16,7 +16,7 @@ const ProfessionalTitlesFilter = ({
   onSelectTitle,
 }: ProfessionalTitlesFilterProps) => {
   const { t } = useT("common");
-  const { professionalTitles } = useGetAllTitles();
+  const { professionalTitles, isLoading } = useGetAllTitles();
 
   const scrollRef = useRef<HTMLDivElement>(null);
   const isDragging = useRef(false);
@@ -81,6 +81,7 @@ const ProfessionalTitlesFilter = ({
       >
         <button
           onClick={(e) => handleClick(e, "all")}
+          disabled={isLoading}
           className={cn(
             "shrink-0 rounded-full border px-6 py-2.5 text-sm font-medium whitespace-nowrap transition-colors",
             selectedTitleId === "all"
@@ -94,6 +95,7 @@ const ProfessionalTitlesFilter = ({
           <button
             key={title._id}
             onClick={(e) => handleClick(e, title._id)}
+            disabled={isLoading}
             className={cn(
               "shrink-0 rounded-full border px-6 py-2.5 text-sm font-medium whitespace-nowrap transition-colors",
               selectedTitleId === title._id

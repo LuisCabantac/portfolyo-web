@@ -27,12 +27,12 @@ const titlesQueries = {
   useGetAllTitles: () => {
     const convex = useConvex();
 
-    const { data: professionalTitles } = useQuery({
+    const { data: professionalTitles, isLoading } = useQuery({
       queryFn: () => convex.query(api.queries.titles.getAllTitle),
       queryKey: ["professional-titles"],
     });
 
-    return { professionalTitles };
+    return { professionalTitles, isLoading };
   },
 };
 
