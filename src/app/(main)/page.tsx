@@ -1,7 +1,10 @@
+import Link from "next/link";
 import Image from "next/image";
 import { getT } from "next-i18next/server";
 
 import { GooglePlayBadge, HeroImage } from "@/lib/icons";
+
+import { Button } from "@/components/ui/button";
 
 const Home = async () => {
   const { t } = await getT("home");
@@ -18,19 +21,24 @@ const Home = async () => {
               {t("hero.subtext")}
             </p>
 
-            <a
-              href="https://play.google.com/store/apps/details?id=com.luiscabantac.portfolyo"
-              target="_blank"
-              rel="noopener"
-            >
-              <Image
-                src={GooglePlayBadge}
-                className="h-10 w-auto select-none"
-                alt="google play store badge"
-                draggable={false}
-                loading="eager"
-              />
-            </a>
+            <div className="flex gap-4">
+              <Button asChild>
+                <Link href="/explore">{t("hero.action")}</Link>
+              </Button>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.luiscabantac.portfolyo"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src={GooglePlayBadge}
+                  className="h-10 w-auto select-none"
+                  alt="google play store badge"
+                  draggable={false}
+                  loading="eager"
+                />
+              </a>
+            </div>
           </div>
           <Image
             src={HeroImage}
