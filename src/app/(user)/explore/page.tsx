@@ -1,10 +1,13 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import { useUser } from "@clerk/nextjs";
 import { useState, useRef } from "react";
+import { useT } from "next-i18next/client";
 import { useRouter } from "next/navigation";
 import { UserResource } from "@clerk/react/types";
 
+import { Portfolio } from "@/lib/icons";
 import { Id } from "../../../../convex/_generated/dataModel";
 import { useGetAllPortfolios } from "@/lib/services/portfolios/queries";
 import { useBookmarkPortfolio } from "@/lib/services/bookmarks/mutations";
@@ -12,11 +15,16 @@ import { useGetProfileByEmailAddress } from "@/lib/services/users/queries";
 
 import PortfolioCard from "@/components/portfolio-card";
 import PortfolioCardSkeleton from "@/components/portfolio-card-skeleton";
-import ProfessionalTitlesFilter from "@/components/professional-titles-filter";
+
+const ProfessionalTitlesFilter = dynamic(
+  () => import("@/components/professional-titles-filter"),
+  { ssr: false },
+);
 
 const Explore = () => {
   const router = useRouter();
   const { user } = useUser();
+  const { t } = useT("common");
   const [selectedTitleId, setSelectedTitleId] = useState<string | "all">("all");
 
   const {
@@ -102,6 +110,24 @@ const Explore = () => {
           </div>
         )}
       </div>
+      {!isLoading && portfolios.length === 0 && (
+        <div className="flex flex-col items-center gap-4 pt-[25vh]">
+          <div
+            className="h-[39px] w-[38px] bg-primary"
+            style={{
+              maskImage: `url(${Portfolio.src})`,
+              WebkitMaskImage: `url(${Portfolio.src})`,
+              maskSize: "contain",
+              WebkitMaskSize: "contain",
+              maskRepeat: "no-repeat",
+              WebkitMaskRepeat: "no-repeat",
+            }}
+          />
+          <p className="w-3/5 text-center text-sm font-medium text-muted-foreground">
+            {t("no_result")}
+          </p>
+        </div>
+      )}
     </main>
   );
 };
