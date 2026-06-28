@@ -81,7 +81,7 @@ const portfolioQueries = {
             selectedTitleId === "all"
               ? null
               : (selectedTitleId as Id<"titles">),
-          paginationOpts: { cursor: pageParam, numItems: 10 },
+          paginationOpts: { cursor: pageParam, numItems: 6 },
         }),
       getNextPageParam: (lastPage) =>
         lastPage.isDone ? undefined : lastPage.continueCursor,
