@@ -21,13 +21,13 @@ const SignIn = () => {
 
     try {
       if (strategy === "guest") {
-        return router.replace("/");
+        return router.replace("/explore");
       }
 
       const { error } = await signIn.sso({
         strategy,
         redirectCallbackUrl: "/sso-callback",
-        redirectUrl: "/",
+        redirectUrl: "/explore",
       });
       if (error) {
         throw new Error(error.toString());
