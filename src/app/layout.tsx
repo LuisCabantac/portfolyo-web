@@ -15,6 +15,21 @@ export const metadata: Metadata = {
   },
   description:
     "Discover developer portfolios and portfolio inspiration from developers worldwide. Save and explore ideas for your own portfolio.",
+  openGraph: {
+    type: "website",
+    url: "https://portfolyo.luiscabantac.com",
+    title: "Portfolyo - Developer Portfolios",
+    description:
+      "Discover developer portfolios and portfolio inspiration from developers worldwide. Save and explore ideas for your own portfolio.",
+    siteName: "Portfolyo",
+    images: [
+      {
+        url: "https://portfolyo.luiscabantac.com/og.jpg",
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
 };
 
 const RootLayout = async ({
